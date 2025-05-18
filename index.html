@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Мария Рыбина</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Playfair+Display&family=Poppins&display=swap" rel="stylesheet" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Montserrat', sans-serif;
+      background: linear-gradient(135deg, #2c1e2f, #1e2c2f);
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+    header {
+      background: rgba(0, 0, 0, 0.6);
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      font-family: 'Poppins', sans-serif;
+    }
+    nav a {
+      color: #ddd;
+      margin-left: 20px;
+      text-decoration: none;
+      transition: color 0.3s;
+      font-family: 'Poppins', sans-serif;
+    }
+    nav a:hover { color: #f5d77a; }
+    .hero {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      padding: 4rem 2rem;
+      flex-wrap: wrap;
+      flex: 1;
+    }
+    .hero-content { max-width: 600px; }
+    .hero-content h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 3rem;
+      color: #f5d77a;
+      margin: 0 0 1rem;
+    }
+    .hero-content p { font-size: 1.2rem; margin: 1rem 0; }
+    .hero-content ul {
+      list-style: none;
+      padding: 0;
+      margin: 1rem 0;
+      font-family: 'Poppins', sans-serif;
+    }
+    .hero-content ul li {
+      display: flex;
+      align-items: center;
+      margin-bottom: 0.75rem;
+    }
+    .hero-content ul li i {
+      color: #f5d77a;
+      margin-right: 0.75rem;
+      font-size: 1.2rem;
+      width: 1.4rem;
+      text-align: center;
+    }
+    .btn {
+      display: inline-block;
+      font-family: 'Poppins', sans-serif;
+      background: #f5d77a;
+      color: #000;
+      padding: 0.8rem 1.5rem;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.3s, transform 0.3s, box-shadow 0.3s;
+      transform: scale(1.2);
+      transform-origin: center;
+    }
+    .btn:hover {
+      background: #e1c86e;
+      transform: scale(1.26);
+      box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+    }
+    /* Устанавливаем одинаковый размер кнопкам обложек и вертикальное расположение */
+    .covers {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1.5rem;
+      margin: 1.5rem 0;
+    }
+    .cover-btn {
+      width: 120px;
+      background: none;
+      border: none;
+      padding: 0;
+      cursor: pointer;
+      transition: transform 0.3s ease;
+      flex-shrink: 0;
+    }
+    .cover-btn img {
+      display: block;
+      width: 100%;
+      height: auto;
+      filter: drop-shadow(0 2px 8px rgba(0,0,0,0.3));
+      transition: transform 0.3s ease, filter 0.3s ease;
+    }
+    .cover-btn:hover img {
+      transform: scale(1.1);
+      filter: drop-shadow(0 4px 20px rgba(0,0,0,0.5));
+    }
+    .hero-image img {
+      width: 100%;
+      max-width: 400px;
+      border-radius: 10px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+      object-fit: cover;
+    }
+    footer {
+      padding: 2rem;
+      text-align: center;
+      background: #1a1a1a;
+      color: #888;
+      font-family: 'Poppins', sans-serif;
+    }
+    @media (max-width: 768px) {
+      .hero { flex-direction: column; text-align: center; }
+      .covers { width: 100%; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div>Внеконкурентный подход</div>
+    <nav>
+      <a href="#program">Программа</a>
+      <a href="#grant">Грант</a>
+      <a href="#about">Обо&nbsp;мне</a>
+      <a href="#contact">Контакты</a>
+    </nav>
+  </header>
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Начните свой Путь Автора вместе с Марией Рыбиной!</h1>
+      <p>Погрузитесь в глубинный авторский опыт и создайте книгу, отражающую вашу личность, идеи и ценности — без отрыва от привычного ритма жизни.</p>
+      <p><strong>Мария Рыбина</strong></p>
+      <ul>
+        <li><i class="fas fa-list-ol"></i>Четкий план действий: от замысла до готовой рукописи</li>
+        <li><i class="fas fa-bullseye"></i>Идея и миссия: сформулируйте «Зачем?» и «Кому?»</li>
+        <li><i class="fas fa-forward"></i>Управляемый процесс: преодолейте самосаботаж и уверенно двигайтесь к финишу</li>
+        <li><i class="fas fa-pen-nib"></i>Авторский стиль: создайте по-настоящему уникальный текст</li>
+        <li><i class="fas fa-book-reader"></i>Выбор пути издания: издательство или самиздат — всё под контролем</li>
+        <li><i class="fas fa-chart-line"></i>Продвижение и монетизация: оптимальная стратегия публикации и тиражирования</li>
+        <li><i class="fas fa-hands-helping"></i>Поддержка Марии Рыбиной: регулярный трекинг, публичные сессии, аудиосопровождение</li>
+      </ul>
+      <button class="btn">Консультация</button>
+    </div>
+    <!-- Кнопки обложек книг теперь между заголовком и фото -->
+    <div class="covers">
+      <button class="cover-btn">
+        <img src="book_cover_small.png" alt="Обложка первой книги Марии Рыбиной" />
+      </button>
+      <button class="cover-btn">
+        <img src="book2_cover_small.png" alt="Обложка второй книги Марии Рыбиной" />
+      </button>
+    </div>
+    <div class="hero-image">
+      <img src="/IMG_0122.jpg" alt="Портрет женщины" />
+    </div>
+  </section>
+  <footer>&copy; 2025 Внеконкурентный подход. Все права защищены.</footer>
+</body>
+</html>
